@@ -1,0 +1,316 @@
+@font-face {
+    font-family: pom;
+    src: url(fonts/BRUSHSCI.TTF);
+}
+
+@font-face {
+    font-family: poms;
+    src: url(fonts/Bradley Hand ITC.TTF);
+}
+
+body {
+    margin: 0;
+}
+
+#name {
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    background-image: url(Photos/top1.jpg);
+	float:left;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    clear: both;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    font-size: 62px;
+    margin: 0;
+    padding-top: 32px;
+    /*font-family: Brush Script Std, cursive;*/
+    font-family: pom, cursive;
+    color: #fff;
+    letter-spacing: 14px;
+}
+
+#header{
+	background:#340550;
+	float:left;
+	width:100%;
+}
+
+#header ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li {
+    float: left;
+	list-style-type: none;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 21px;
+    padding: 15px;
+}
+
+#header ul li a:hover{
+	color:#220e38;
+	background:#e8cdefd6;
+}
+
+#content {
+    clear: both;
+}
+
+div#content>div{
+	float:left;
+}
+
+.sidebar {
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.products {
+    width: 60%;
+}
+
+.interesting {
+    width: 20%;
+}
+
+.product {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.p_border {
+    border: 1px solid #ccc;
+    padding: 2px 2px 5px 2px;
+    margin: 4px;
+}
+.product img {
+    width: 100%;
+}
+
+.product p {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.product h2 {
+    margin: 3px;
+}
+
+button {
+    max-width: 140px;
+    width: 100%;
+    font-size: 15px;
+    margin: 2px;
+}
+
+button.details:hover{
+	box-shadow: inset 2px -3px 44px -10px rgba(252,252,0,1);
+}
+
+button.buy:hover{
+	box-shadow: inset 2px -3px 44px -10px rgba(26,219,15,1);
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.interesting {
+    background: #b4c6c769;
+	margin-top: 4px;
+}
+
+.sidebar ul, .interesting ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li, .interesting ul li {
+    list-style-type: none;
+}
+
+.sidebar ul li a, .interesting ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    color: #260254;
+    padding: 8px 0px;
+}
+
+.sidebar ul li a:hover{
+	font-family:poms, cursive;
+}
+
+.interesting ul li a {
+    text-align: center;
+}
+
+.interesting ul li a:hover{
+	font-family:poms, cursive;
+	text-decoration:underline;
+}
+
+.interesting form {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: #faf9fb;
+}
+.search input, .search button {
+    border: none;
+    outline: none;
+    background: #c350de00;
+    box-sizing: border-box;
+}
+.search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 1px solid #d1cadc;
+}
+.search button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+h3{
+    text-align: center;
+    margin: 4px 0;
+    font-family: Bradley Hand, cursive;
+    font-size: 15px;
+	color: #260254;
+}
+
+.call_me {
+    background: #eef2f3c7;
+    margin: 4px;
+}
+
+.call_me form {
+    background: #eaf0f0;
+    text-align: center;
+}
+
+.call_me input {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    margin: 3px 0;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    background: #1f042f;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+}
+
+#footer a {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #ca79d8;
+}
+
+@media(max-width:800px){
+	.sidebar {
+		width: 100%;
+	}
+	
+	.products{
+		width:80%;
+	}
+	
+	h1 {
+		letter-spacing: 5px;
+	}
+
+	.sidebar ul li a {
+		text-align: center;
+		padding-left:0;
+	}
+
+}
+
+@media(max-width:700px){
+	.products{
+		width:100%;
+	}
+	
+	.interesting{
+		width:100%;
+	}
+	
+	.call_name, .call_phone {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 3px;
+	}
+}
+
+@media(max-width:670px){
+	h1 {
+		letter-spacing: 0;
+	}
+}
+
+@media(max-width:600px){
+	h1 {
+		font-size: 32px;
+		padding-top: 50px;
+	}
+}
+
+@media(max-width:450px){
+	.product{
+		width:100%;
+	}
+	.call_name, .call_phone {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
